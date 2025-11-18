@@ -1,0 +1,55 @@
+{
+  "name": "livecodes-reveal-plugin",
+  "version": "1.0.0-alpha.0",
+  "description": "A plugin for Reveal.js that enables embedding and running LiveCodes code playgrounds directly within your slides. Supports multiple languages and frameworks, making it easy to create interactive, live coding presentations.",
+  "main": "build/reveal.js",
+  "types": "build/types.d.ts",
+  "browser": "build/reveal.umd.js",
+  "module": "build/reveal.js",
+  "jsdelivr": "./build/reveal.umd.js",
+  "exports": {
+    ".": {
+      "import": "./build/reveal.js",
+      "require": "./build/reveal.js",
+      "default": "./build/reveal.js"
+    }
+  },
+  "scripts": {
+    "test:unit": "jest src",
+    "build": "run-s clean build:js build:ts",
+    "build:js": "node ./scripts/build.js",
+    "build:ts": "tsc --emitDeclarationOnly",
+    "clean": "rimraf build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m2y11138/livecodes-reveal-plugin.git"
+  },
+  "keywords": [
+    "livecodes-plugin",
+    "reveal-plugin"
+  ],
+  "author": "m2y11138",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m2y11138/livecodes-reveal-plugin/issues"
+  },
+  "homepage": "https://github.com/m2y11138/livecodes-reveal-plugin#readme",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/reveal.js": "^5.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.4",
+    "@typescript-eslint/parser": "^8.46.4",
+    "esbuild": "^0.27.0",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "jest-environment-jsdom": "^30.2.0",
+    "livecodes": "^0.12.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.1.0",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.9.3"
+  }
+}
