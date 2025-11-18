@@ -19,8 +19,8 @@ npm install livecodes-reveal-plugin
 Or include via `<script>` in your HTML:
 
 ```html
-<script src="path/to/reveal.js"></script>
-<script src="path/to/livecodes-reveal-plugin/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/livecodes-reveal-plugin@latest/reveal.min.umd.js"></script>
 ```
 
 ## Usage

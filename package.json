@@ -1,6 +1,6 @@
 {
   "name": "livecodes-reveal-plugin",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.6",
   "description": "A plugin for Reveal.js that enables embedding and running LiveCodes code playgrounds directly within your slides. Supports multiple languages and frameworks, making it easy to create interactive, live coding presentations.",
   "main": "build/reveal.js",
   "types": "build/types.d.ts",

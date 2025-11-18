@@ -29,13 +29,14 @@ const buildSdk = async () => {
     esbuild.build({
       ...baseOptions,
       outdir: undefined,
-      outfile: path.resolve(outDir, "reveal.umd.js"),
+      outfile: path.resolve(outDir, "reveal.min.umd.js"),
       format: "iife",
     }),
     esbuild.build({
       ...baseOptions,
       outdir: undefined,
-      outfile: path.resolve(outDir, "reveal.js"),
+      outfile: path.resolve(outDir, "reveal.min.js"),
+      format: "esm",
     }),
   ]);
 };
